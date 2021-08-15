@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Practing problems</h1>
+    <section>
+        <input id="first-input" type="text" placeholder="1st input">
+        <input id="second-input" type="text" placeholder="2nd input">
+        <br>
+        <button id="fbtn">1st button</button>
+        <button id="sbtn">2nd button</button>
+        <button id="tbtn">3rd button</button>
+    </section>
+    <script>
+        // for first btn
+        document.getElementById('fbtn').addEventListener('click', function (event) {
+            const fInput = document.getElementById('first-input');
+            // const p = document.createElement('p');
+            // p.innerText = fInput.value;
+            // console.log(p.innerText);
+            event.innerText = fInput.value;
+            console.log(event.innerText);
+            fInput.value = '';
+        })
+        // for second btn
+        document.getElementById('sbtn').addEventListener('click', function (event) {
+            const SInput = document.getElementById('second-input');
+            // const p = document.createElement('p');
+            // p.innerText = fInput.value;
+            // console.log(p.innerText);
+            event.innerText = SInput.value;
+            console.log(event.innerText);
+            SInput.value = '';
+        })
+        // for third btn
+        document.getElementById('tbtn').addEventListener('click', function (event) {
+
+            const fInput = document.getElementById('first-input');
+            let first = event.innerText = fInput.value;
+
+            const SInput = document.getElementById('second-input');
+            let second = event.innerText = SInput.value;
+
+            let third = console.log(first + ' ' + second);
+            fInput.value = '';
+            SInput.value = '';
+        })
+    </script>
+</body>
+
+</html>
